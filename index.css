@@ -1,6 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+.shapes{
+    transform: rotate(0deg);
+    animation-name: shape;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: 2s;
+}
+
+@keyframes shape{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+
 #circleImg{
     position: absolute;
     width: 179px;
@@ -21,8 +35,12 @@
     font-weight: normal;
     font-size: 36px;
     line-height: 42px;
-
+    transition: 2s;
     color: #000000;
+}
+#HBDtext:hover{
+    cursor: default;
+    transform: scale(2,2);
 }
 #vector1{
     position: absolute;
@@ -34,7 +52,7 @@
     width: 342.89px;
     height: 440.19px;
     left: 900px;
-    transform: rotate(90deg);
+
 }
 #vector3{
     position: absolute;
@@ -63,6 +81,10 @@
     height: 262px;
     left: 413px;
     top: 1600px;
+    transition: 3s;
+}
+#wish:hover{
+    transform: scale(1.2,1.2);
 }
 #joke{
     position: absolute;
@@ -75,6 +97,18 @@
     position: absolute;
     width: 342.89px;
     height: 440.19px;
+    left: 30px;
+    top: 1600px;
+}
+#vector5{
+    position: absolute;
+    width: 342.89px;
+    height: 440.19px;
+    left: 970px;
+    top: 1400px;
+
+}
+
     left: 30px;
     top: 1600px;
 }
